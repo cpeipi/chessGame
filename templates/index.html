@@ -70,7 +70,8 @@
             z-index: 1;
             transition: background 0.5s ease-in-out,
                         transform 0.5s ease-in-out,
-                        box-shadow 0.5s ease-in-out;
+                        box-shadow 0.5s ease-in-out,
+                        animation 0.5s ease-out;
         }
         .gamecell:hover{
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -81,6 +82,7 @@
             animation: shake 0.3s ease-in-out infinite alternate;
             animation-delay: 0.5s;
             animation-composition: add;
+            animation-fill-mode: forwards;
         }
         .grey{
             background: rgba(128, 128, 128);
